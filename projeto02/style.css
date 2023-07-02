@@ -1,0 +1,56 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+:root{
+    --cor01:#1F1B70;
+    --cor02:#8883F2;
+    --cor03:#443AF0;
+    --cor04:#464370;
+    --cor05:#342DBD;
+
+    --fonte01:"rhuma sinera";
+    --font02:'Open Sans', sans-serif;
+}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+@font-face {
+    font-family: "rhuma sinera";
+    src: url(fontes/Rhuma\ Sinera\ Shadow.ttf);
+    src: url(fontes/Rhuma\ Sinera\ Inline.ttf);
+    src: url(fontes/Rhuma\ Sinera\ Regular.ttf);
+}
+body{
+    background-color:var(--cor03);
+}
+header{
+    min-height: 200px;
+    width: 100vw;
+    background-color:var(--cor05);
+}
+h1{
+    color: var(--cor02);
+    font-size: 80px;
+    text-align: justify;
+    text-align:center;
+    text-shadow: 1px 1px 34px 1px var(--cor04);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 12px;
+    padding-right: 12px;
+    font-family: var(--fonte01);    
+}
+nav >ul >a{
+    display:inline-block;
+    color: aliceblue;
+    padding: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: var(--font02);
+    box-shadow:1px 1px 3px 1px #1F1B70;
+}
+a:hover{
+    background: aliceblue;
+    color: var(--cor03);
+    border-radius: 20px;
+}
