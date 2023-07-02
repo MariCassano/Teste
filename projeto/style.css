@@ -1,0 +1,242 @@
+/*configurações globais*/
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(31, 36, 87);
+    background-size: 100%;
+}
+/* criar sol*/
+.sol{
+    height: 120px;
+    width: 120px;
+    background-color: rgb(255, 187, 0);
+    border-radius: 50%;
+    background-size: cover;
+    box-shadow: -4px 2px 56px #f9c05f;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+/*criar mercúrio*/
+.mercurio{
+    height:20px;
+    width: 20px;
+    background-color: saddlebrown;
+    border-radius: 50%;
+    position: absolute;
+    box-shadow: -4px 2px 56px #f9c05f;
+    left: 43%;
+    top: 42%;
+    transform: translate(-50%,-50%);
+    animation: orbit2 2s linear infinite;
+}
+/* Para criar a animação da órbita de mercúrio*/
+@keyframes orbit2{
+    from{transform: rotate(0deg)translateX(70px)rotate(0deg);}
+    to{transform: rotate(360deg)translateX(70px)rotate(-360deg);}
+}
+p{
+    color: rgba(255, 255, 255, 0.829);
+    font-family:'Courier New', Courier, monospace;
+    position: absolute;
+    left: -62px;
+    top: -11px;
+}
+a{
+    text-decoration: none;
+    color: rgb(237, 241, 241);
+}
+.orbita01,.orbita02,.orbita03,.orbita04,.orbita05,.orbita06,.orbita07,.orbita08{
+   border-radius: 50%;
+   border: 1px dotted #ddd9;
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%,-50%);
+}
+.orbita01{
+    height: 140px;
+    width: 140px;
+}
+/*criar venus*/
+.venus{
+    height:40px;
+    width: 40px;
+    background-color: rgb(179, 122, 81);
+    background-size: 100%;
+    border-radius: 50%;
+    position: absolute;
+    box-shadow: -4px 2px 56px #c1aa81;
+    left: 40%;
+    top: 42%;
+    transform: translate(-50%,-50%);
+    animation: orbit3 10s linear infinite;
+}
+@keyframes orbit3{
+    from{transform: rotate(0deg)translateX(100px)rotate(0deg);}
+    to{transform: rotate(360deg)translateX(100px)rotate(-360deg);}
+}
+.orbita02{
+    height: 200px;
+    width: 200px;
+}
+/*criar terra*/
+.terra{
+    height:50px;
+    width: 50px;
+    background-color: rgb(17, 43, 156);
+    background-size: 100%;
+    border-radius: 50%;
+    position: absolute;
+    box-shadow: -4px 2px 56px #2855d6;
+    left: 44%;
+    top: 43%;
+    transform: translate(-50%,-50%);
+    animation: orbit4 20s linear infinite;
+}
+@keyframes orbit4{
+    from{transform: rotate(0deg)translateX(150px)rotate(0deg);}
+    to{transform: rotate(360deg)translateX(150px)rotate(-360deg);}
+}
+.orbita03{
+    height: 300px;
+    width: 300px;
+}
+.terra01{
+    height: 65px;
+    width: 65px;
+    border: 1px dotted #fff;
+    position: relative;
+    left: -8px;
+    top: -8px;
+    border-radius: 40px;
+}
+.lua{
+    height: 10px;
+    width: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 45%;
+    top: 45%;
+    animation: orbit5 3s linear infinite;
+}
+@keyframes orbit5{
+    from{transform: rotate(0deg)translateX(33px)rotate(0deg);}
+    to{transform: rotate(360deg)translateX(33px)rotate(-360deg);}
+}
+/*criar marte*/
+.marte{
+    height:30px;
+    width: 30px;
+    background-color: rgba(184, 0, 0, 0.904);
+    background-size: 100%;
+    border-radius: 50%;
+    position: absolute;
+    box-shadow: -4px 2px 56px #fea535;
+    left: 46.5%;
+    top: 46.5%;
+    transform: translate(-50%,-50%);
+    animation: orbit6 30s linear infinite;
+}
+@keyframes orbit6{
+    from{transform: rotate(0deg)translateX(185px)rotate(0deg);}
+    to{transform: rotate(360deg)translateX(185px)rotate(-360deg);}
+}
+.orbita04{
+    height: 370px;
+    width: 370px;
+}
+/*criar jupiter*/
+
+.jupiter{
+    height:60px;
+    width: 60px;
+    background-color: rgba(187, 145, 118, 0.815);
+    background-size: 100%;
+    border-radius: 50%;
+    position: absolute;
+    box-shadow: -4px 2px 56px #cac2b9;
+    left: 45%;
+    top: 45%;
+    transform: translate(-50%,-50%);
+    animation: orbit7 60s linear infinite;
+}
+@keyframes orbit7{
+    from{transform: rotate(0deg)translateX(217px)rotate(0deg);}
+    to{transform: rotate(360deg)translateX(217px)rotate(-360deg);}
+}
+.orbita05{
+    height: 430px;
+    width: 430px;
+}
+/* criar saturno*/
+.saturno{
+    height:50px;
+    width: 50px;
+    background-color: rgba(241, 241, 241, 0.815);
+    background-size: 100%;
+    border-radius: 50%;
+    position: absolute;
+    box-shadow: -4px 2px 56px #cac2b9;
+    left: 45%;
+    top: 45%;
+    transform: translate(-50%,-50%);
+    animation: orbit8 90s linear infinite;
+}
+@keyframes orbit8{
+    from{transform: rotate(0deg)translateX(250px)rotate(0deg);}
+    to{transform: rotate(360deg)translateX(250px)rotate(-360deg);}
+}
+.orbita06{
+    height: 500px;
+    width: 500px;
+}
+
+/* criar urano*/
+.urano{
+    height:30px;
+    width: 30px;
+    background-color: rgba(41, 241, 255, 0.815);
+    background-size: 100%;
+    border-radius: 50%;
+    position: absolute;
+    box-shadow: -4px 2px 56px #cac2b9;
+    left: 48%;
+    top: 48%;
+    transform: translate(-50%,-50%);
+    animation: orbit9 200s linear infinite;
+}
+@keyframes orbit9{
+    from{transform: rotate(0deg)translateX(280px)rotate(0deg);}
+    to{transform: rotate(360deg)translateX(280px)rotate(-360deg);}
+}
+.orbita07{
+    height: 560px;
+    width: 560px;
+}
+
+/* criar netuno*/
+.netuno{
+    height:30px;
+    width:30px;
+    background-color: rgba(57, 81, 189, 0.815);
+    background-size:100%;
+    border-radius: 50%;
+    position: absolute;
+    box-shadow: -4px 2px 56px #cac2b9;
+    left: 48%;
+    top: 48%;
+    transform: translate(-50%,-50%);
+    animation: orbit10 400s linear infinite;
+}
+@keyframes orbit10{
+    from{transform: rotate(0deg)translateX(310px)rotate(0deg);}
+    to{transform: rotate(360deg)translateX(310px)rotate(-360deg);}
+}
+.orbita08{
+    height: 620px;
+    width: 620px;
+}
